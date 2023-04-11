@@ -1,0 +1,36 @@
+//90deg per orizzontale (button TRY IT NOW)(CTA)
+//180deg per verticale (button ORDERN NOW)
+//145deg per da sx/su a dx/giu (button VIEW ALL SERVICES)((price_card)
+@mixin pink_gradient($deg) {
+    background: linear-gradient($deg, rgba(182,36,110,1) 0%, rgba(249,99,107,1) 100%);
+};
+
+
+//90deg per orizzontale (price)
+//180deg per verticale (hero_1 e hero_2 e footer)
+//300deg per diagonale (blog_card)
+@mixin blue_gradient($deg:180deg) {
+    background: linear-gradient($deg, rgba(11,25,83,1) 0%, rgba(1,1,47,1) 100%);
+};
+
+@mixin blue_button{
+    background: rgb(23,184,227);
+    background: linear-gradient(101deg, rgba(23,184,227,1) 0%, rgba(45,86,196,1) 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 0px;
+    border-radius: 20px
+};
+
+@mixin container {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+};
+
+@mixin flexbox($justify,$alignI,$wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignI;
+    flex-wrap: $wrap;
+}
