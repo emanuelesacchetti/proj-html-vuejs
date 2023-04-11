@@ -55,6 +55,7 @@
 
                     li {
                         padding-right: 1rem;
+                        font-size: 0.8rem;
 
                         &:hover {
                             color: $secondary_color;
@@ -64,6 +65,7 @@
                 }
                 button {
                     @include blue_button;
+                    @include btn;
                     font-family: "Roboto Slab", serif;
                 }
             }
