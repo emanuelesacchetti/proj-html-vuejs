@@ -1,9 +1,11 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
+  import AppService from './components/AppService.vue';
 
   export default {
     components: {
-      AppHeader
+      AppHeader,
+      AppService
     },
     data() {
       return {
@@ -18,6 +20,9 @@
 
 <template>
   <AppHeader :links="navLinks"/>
+  <main>
+    <AppService />
+  </main>
 </template>
 
 
