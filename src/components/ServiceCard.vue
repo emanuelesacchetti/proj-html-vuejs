@@ -45,7 +45,7 @@
         padding: 50% 20px 0;
         position: relative;
         color: white;
-        @include blue_gradient;
+        @include blue_gradient(80deg);
         border-radius: 20px;
 
 

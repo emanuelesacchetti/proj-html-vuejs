@@ -1,11 +1,13 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
   import AppService from './components/AppService.vue';
+  import AppHero_2 from './components/AppHero_2.vue';
 
   export default {
     components: {
       AppHeader,
-      AppService
+      AppService,
+      AppHero_2
     },
     data() {
       return {
@@ -22,6 +24,7 @@
   <AppHeader :links="navLinks"/>
   <main>
     <AppService />
+    <AppHero_2 />
   </main>
 </template>
 
