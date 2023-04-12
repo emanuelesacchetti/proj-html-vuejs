@@ -20,5 +20,23 @@ export const store = reactive({
             title: 'What People Say'
         },
 
+    ],
+    services: [
+        {
+            title:'Data Analysis',
+            img:'Group-247.png'
+        },
+        {
+            title: 'SEO Optimization',
+            img: 'Group-538.png'
+        },
+        {
+            title: 'Security Data',
+            img: 'Group-566.png'
+        },
+        {
+            title: 'Branding Strategy',
+            img: 'Group-567.png'
+        }
     ]
 })

@@ -26,9 +26,16 @@
             </div>
 
             <div class="card-cont">
-                <ServiceCard />
+                <div v-for="service in store.services" class="card-item">
+                    <ServiceCard 
+                        :title="service.title"
+                        :text="store.text_1"
+                        :image="service.img"
+                    />
+                </div>
+                
             </div>
-
+            <button>View All Services</button>
         </div>
     </div>
 
@@ -41,22 +48,33 @@
 
     .wrapper {
         background-color: white;
-        height: 500px;
-        border-bottom: 1px solid black;
+        width: 100%;
 
         .container {
             @include container;
+            padding: 20px;
             flex-direction: column;
             @include flexbox(center,center,nowrap);
 
             .title {
                 width: 300px;
                 text-align: center;
-
+                padding-bottom: 100px;
             }
-            .card_cont {
-                border: 1px solid black;
-                height: 200px;
+            .card-cont {
+                @include flexbox(space-between, center, nowrap);
+
+                .card-item {
+                    width: calc(100% / 4);
+                    height: 300px;
+                    padding: 10px;
+                }
+            }
+            button {
+                @include pink_gradient(145deg);
+                @include btn;
+                margin: 50px;
+
             }
         }
 
