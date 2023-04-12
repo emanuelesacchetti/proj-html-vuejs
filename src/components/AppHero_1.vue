@@ -1,10 +1,16 @@
 <script>
     import HeroCard from './HeroCard.vue';
+    import {store} from '../store.js'
 
     export default {
         name: 'AppHero_1',
         components: {
             HeroCard
+        },
+        data(){
+            return {
+                store
+            }
         }
     }
 </script>
@@ -14,7 +20,11 @@
     <div class="hero">
         <div class="container">
             <div class="text-cont">
-                <HeroCard />
+                <HeroCard 
+                    :first="store.hero[0].first"
+                    :second="store.hero[0].second"
+                    :third="store.hero[0].third"
+                />
             </div>
             <div class="img-cont">
                 <img src="../assets/images/hero_1.png" alt="">

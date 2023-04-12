@@ -7,15 +7,20 @@
             return {
                 store
             }
+        },
+        props:{
+            first: String,
+            second: String,
+            third: String
         }
     }
 </script>
 
 <template>
     <div class="card-cont">
-        <h1>Business Planning</h1>
-        <h2>Digital Technology</h2>
-        <h1>Modern Solution !</h1>
+        <h1>{{ first }}</h1>
+        <h2>{{ second }}</h2>
+        <h1>{{ third }}</h1>
         <p>{{ store.text_1 }}</p>
         <button class="btn-red">Try It Now</button>
         <button class="btn-blue">Explore More</button>
