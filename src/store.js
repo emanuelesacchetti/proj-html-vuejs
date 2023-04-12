@@ -17,19 +17,23 @@ export const store = reactive({
     title:[
         {
             section: 'Our Services',
-            title: 'What We Do'
+            first: 'What ',
+            title: 'We Do'
         },
         {
             section: 'Price List',
-            title: 'Our Pricing'
+            first: 'Our ',
+            title: 'Pricing'
         },
         {
             section: 'Blog',
-            title: 'Latest Posts'
+            first: 'Latest ',
+            title: 'Posts'
         },
         {
             section: 'Testimonials',
-            title: 'What People Say'
+            first: 'What ',
+            title: 'People Say'
         },
 
     ],
@@ -82,5 +86,44 @@ export const store = reactive({
             sector: 'Branding Strategy',
             image: 'timon-studler-63413-unsplash-1380x703.jpg'
         }
+    ],
+    priceCard: [
+        {
+            title:'Designing',
+            type: 'PROCESS',
+            price: 40,
+        },
+        {
+            title:'Developing',
+            type: 'PRODUCT',
+            price: 60,
+        },
+        {
+            title:'Supporting',
+            type: 'CLIENTS',
+            price: 80,
+        }
+    ],
+    priceCardSelection: [
+        {
+            first: 'Creative',
+            second: 'Design Enabled'
+        },
+        {
+            first: 'Vibrant',
+            second: 'Color Usage'
+        },
+        {
+            first: 'Eye',
+            second: 'Catching Design'
+        },
+        {
+            first: 'Extreme',
+            second: 'Typography'
+        },
+        {
+            first: 'Exceptional',
+            second: 'Design'
+        },
     ]
 })

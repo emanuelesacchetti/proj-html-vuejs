@@ -3,13 +3,15 @@
   import AppService from './components/AppService.vue';
   import AppHero_2 from './components/AppHero_2.vue';
   import AppPortfolio from './components/AppPortfolio.vue';
+  import AppPrice from './components/AppPrice.vue';
 
   export default {
     components: {
       AppHeader,
       AppService,
       AppHero_2,
-      AppPortfolio
+      AppPortfolio,
+      AppPrice
     },
     data() {
       return {
@@ -28,6 +30,7 @@
     <AppService />
     <AppHero_2 />
     <AppPortfolio />
+    <AppPrice />
   </main>
 </template>
 

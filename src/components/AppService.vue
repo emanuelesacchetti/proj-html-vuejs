@@ -22,7 +22,11 @@
         <div class="container">
 
             <div class="title">
-                <SectionTitle />
+                <SectionTitle 
+                    :section="store.title[0].section"
+                    :first="store.title[0].first"
+                    :title="store.title[0].title"
+                />
             </div>
 
             <div class="card-cont">

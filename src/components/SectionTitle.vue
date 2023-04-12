@@ -6,14 +6,22 @@
             return {
                 store
             }
+        },
+        props: {
+            section: String,
+            first: String,
+            title: String
         }
     }
 </script>
 
 <template>
     <div class="wrapper">
-        <h6>{{ store.title[0].section }}</h6>
-        <h2>{{ store.title[0].title }}</h2>
+        <h6>{{ section }}</h6>
+        <div class="title">
+            <span class="bold">{{ first }}</span>
+            <span>{{ title }}</span>
+        </div>
         <h5>{{ store.text_1 }}</h5>
     </div>
 
@@ -26,14 +34,22 @@
 
         .wrapper {
             text-align: center;
-
-            
-            h6 { color: $primary_color }
+       
+            h6 { 
+                color: $primary_color;
+                font-size: 0.5rem;
+            }
 
             h5 { 
                 color: black;
                 font-size: 0.6rem;
                 font-weight: 300;
+            }
+            .title{
+                font-size: 1.8rem;
+            }
+            .bold {
+                font-weight: bold;
             }
         }
 
