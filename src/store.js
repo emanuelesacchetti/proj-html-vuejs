@@ -18,22 +18,26 @@ export const store = reactive({
         {
             section: 'Our Services',
             first: 'What ',
-            title: 'We Do'
+            title: 'We Do',
+            class: ''
         },
         {
             section: 'Price List',
             first: 'Our ',
-            title: 'Pricing'
+            title: 'Pricing',
+            class: 'white'
         },
         {
             section: 'Blog',
             first: 'Latest ',
-            title: 'Posts'
+            title: 'Posts',
+            class: ''
         },
         {
             section: 'Testimonials',
             first: 'What ',
-            title: 'People Say'
+            title: 'People Say',
+            class: ''
         },
 
     ],
@@ -92,16 +96,19 @@ export const store = reactive({
             title:'Designing',
             type: 'PROCESS',
             price: 40,
+            class: ''
         },
         {
             title:'Developing',
             type: 'PRODUCT',
             price: 60,
+            class: 'pink'
         },
         {
             title:'Supporting',
             type: 'CLIENTS',
             price: 80,
+            class: ''
         }
     ],
     priceCardSelection: [

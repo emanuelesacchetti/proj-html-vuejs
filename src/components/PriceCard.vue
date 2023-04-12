@@ -6,7 +6,8 @@
         props: {
             title: String,
             type: String,
-            price: Number
+            price: Number,
+            classe: String
         },
         data(){
             return{
@@ -19,23 +20,23 @@
 
 <template>
     <div class="price-wrapper">
-        <div class="price-absolute"></div>
-        <div class="title">{{ title }}</div>
-        <div class="type">{{ type }}</div>
+        <div class="price-absolute">{{ price }}</div>
+        <div class="title" :class="classe == 'pink' ? 'white' : ''">{{ title }}</div>
+        <div class="type" :class="classe == 'pink' ? 'white' : ''">{{ type }}</div>
         <div class="price-box">
-            <div class="dollar">$</div>
-            <div class="price">{{ price }}</div>
-            <div class="durating">Per Month</div>
+            <div class="dollar" :class="classe == 'pink' ? 'white' : ''">$</div>
+            <div class="price" :class="classe == 'pink' ? 'white' : ''">{{ price }}</div>
+            <div class="durating" :class="classe == 'pink' ? 'white' : ''">Per Month</div>
         </div>
-        <ul class="selection" v-for="select in store.priceCardSelection">
+        <ul class="selection" v-for="select in store.priceCardSelection" :class="classe == 'pink' ? 'white' : ''">
             <li>
                 <span><strong>{{ select.first }}</strong></span>
                 <span>{{ select.second }}</span>
             </li>
         </ul>
-        <button>
-            <div>Order Now</div>
-            <div>icon</div>
+        <button :class="classe == 'pink' ? 'bg-white' : ''">
+            <span>Order Now</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
         </button>
     </div>
 </template>
@@ -56,14 +57,21 @@
 
         .price-absolute {
             position: absolute;
-            top: -56px;
-            right: -8px;
-            font-size: 11rem;
+            top: -79px;
+            right: -34px;
+            font-size: 15rem;
+            opacity: 0.1;
         }
         .title {
             font-size: 1.8rem;
             font-weight: bold;
             padding: 10px;
+        }
+        .white {
+            color: white;
+        }
+        .black{
+            color: black;
         }
         .type {
             font-size: 0.9rem;
@@ -93,6 +101,13 @@
         }
         button{
             margin-top: 25px;
+            @include btn;
+            @include pink_gradient(180deg);
         }
+        span{
+            padding: 0 5px;
+        }
+
+        
     }
 </style>

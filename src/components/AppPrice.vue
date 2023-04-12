@@ -25,15 +25,16 @@ export default {
                 :section="store.title[1].section"
                 :first="store.title[1].first"
                 :title="store.title[1].title"
+                :classe="store.title[1].class"
             />
         </div>
         <div class="container">
-            <div v-for="card in store.priceCard" class="card-wrapper">
-                <div class="bg-price">{{ card.price }}</div>
+            <div v-for="card in store.priceCard" class="card-wrapper" :class="card.class == 'pink' ? 'pink' : 'white'">
                 <PriceCard 
                     :title="card.title"
                     :type="card.type"
                     :price="card.price"
+                    :classe="card.class"
                 />
             </div>
 
@@ -47,6 +48,12 @@ export default {
     @use '../styles/variables' as *;
     @use '../styles/general.scss';
 
+    .pink{
+        @include pink_gradient(180deg)
+    }
+    .white{
+        background-color: white;
+    }
     .section-wrapper {
 
         @include blue_gradient;
@@ -70,15 +77,7 @@ export default {
             height: 100%;
             border-radius: 20px;
             position: relative;
-            background-color: white;
-
-            .bg-price {
-                position: absolute;
-                top: -79px;
-                right: -14px;
-                font-size: 15rem;
-                opacity: 0.4;
-            }
+            box-shadow: 0px 0px 20px 0px black;
         }
     }
     .title {

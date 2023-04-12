@@ -10,7 +10,8 @@
         props: {
             section: String,
             first: String,
-            title: String
+            title: String,
+            classe: String
         }
     }
 </script>
@@ -18,11 +19,11 @@
 <template>
     <div class="wrapper">
         <h6>{{ section }}</h6>
-        <div class="title">
+        <div class="title" :class="classe == 'white' ? 'white' : ''">
             <span class="bold">{{ first }}</span>
             <span>{{ title }}</span>
         </div>
-        <h5>{{ store.text_1 }}</h5>
+        <h5 :class="classe == 'white' ? 'white' : ''">{{ store.text_1 }}</h5>
     </div>
 
 </template>
@@ -38,6 +39,9 @@
             h6 { 
                 color: $primary_color;
                 font-size: 0.5rem;
+            }
+            .white {
+                color: white;
             }
 
             h5 { 
