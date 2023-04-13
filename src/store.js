@@ -132,5 +132,10 @@ export const store = reactive({
             first: 'Exceptional',
             second: 'Design'
         },
+    ],
+    testimonial: [
+        'fabio-spinelli-695744-unsplash-1024x1024.png',
+        'philipe-cavalcante-539505-unsplash-1024x1024.png',
+        'szabo-viktor-1266895-unsplash-1024x1024.png'
     ]
 })
