@@ -4,6 +4,7 @@
   import AppHero_2 from './components/AppHero_2.vue';
   import AppPortfolio from './components/AppPortfolio.vue';
   import AppPrice from './components/AppPrice.vue';
+  import AppBlog from './components/AppBlog.vue';
 
   export default {
     components: {
@@ -11,7 +12,8 @@
       AppService,
       AppHero_2,
       AppPortfolio,
-      AppPrice
+      AppPrice,
+      AppBlog
     },
     data() {
       return {
@@ -31,6 +33,7 @@
     <AppHero_2 />
     <AppPortfolio />
     <AppPrice />
+    <AppBlog />
   </main>
 </template>
 

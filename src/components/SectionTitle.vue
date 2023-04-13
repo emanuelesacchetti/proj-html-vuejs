@@ -38,7 +38,7 @@
        
             h6 { 
                 color: $primary_color;
-                font-size: 0.5rem;
+                font-size: 0.6rem;
             }
             .white {
                 color: white;
@@ -46,11 +46,11 @@
 
             h5 { 
                 color: black;
-                font-size: 0.6rem;
+                font-size: 0.7rem;
                 font-weight: 300;
             }
             .title{
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
             .bold {
                 font-weight: bold;
