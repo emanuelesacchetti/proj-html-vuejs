@@ -6,6 +6,7 @@
   import AppPrice from './components/AppPrice.vue';
   import AppBlog from './components/AppBlog.vue';
   import AppTestimonial from './components/AppTestimonial.vue';
+  import AppFooter from './components/AppFooter.vue';
 
   export default {
     components: {
@@ -15,7 +16,8 @@
       AppPortfolio,
       AppPrice,
       AppBlog,
-      AppTestimonial
+      AppTestimonial,
+      AppFooter
     },
     data() {
       return {
@@ -37,6 +39,7 @@
     <AppPrice />
     <AppBlog />
     <AppTestimonial />
+    <AppFooter />
   </main>
 </template>
 

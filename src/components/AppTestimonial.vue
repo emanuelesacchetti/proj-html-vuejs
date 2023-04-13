@@ -115,7 +115,7 @@
     }
     .cta {
         position: absolute;
-        top: 120%;
+        top: 116%;
         left: -50%;
         transform: translate(50%, -50%);
         height: 150px;
