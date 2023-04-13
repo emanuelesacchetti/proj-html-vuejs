@@ -137,5 +137,12 @@ export const store = reactive({
         'fabio-spinelli-695744-unsplash-1024x1024.png',
         'philipe-cavalcante-539505-unsplash-1024x1024.png',
         'szabo-viktor-1266895-unsplash-1024x1024.png'
+    ],
+    clients: [
+        'client-1-1.png',
+        'client-5.png',
+        'clienty-2.png',
+        'clienty-3.png',
+        'clienty-4.png'
     ]
 })
