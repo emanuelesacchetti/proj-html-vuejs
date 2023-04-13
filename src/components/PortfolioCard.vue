@@ -4,7 +4,8 @@
         props: {
             title: String,
             sector: String,
-            image: String
+            image: String,
+            index: Number
         },
         methods: {
             getImageUrl(img){
@@ -55,7 +56,7 @@
             .text-item-dx{
                 font-size: 0.7rem;
                 color: $text_secondary;
-                padding: 0 0 15px 10px;
+                padding: 0 8px 15px 10px;
             }
         }
     }

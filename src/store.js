@@ -1,5 +1,6 @@
 import {reactive} from 'vue'
 export const store = reactive({
+    sliderIndex: 0,
     text_1: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.',
     text_2: 'of the impenetrable foliage of my trees, and but a few stray leams steal into the inner sanctuary',
     hero:[
@@ -89,6 +90,11 @@ export const store = reactive({
             title: 'Safity Poster',
             sector: 'Branding Strategy',
             image: 'timon-studler-63413-unsplash-1380x703.jpg'
+        },
+        {
+            title: 'Basket of Flower',
+            sector: 'Branding Strategy',
+            image: '84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg'
         }
     ],
     priceCard: [
